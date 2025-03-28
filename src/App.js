@@ -15,7 +15,7 @@ setname(e.target.value)
     setpass(e.target.value)
   }
   function sub(){
-const logindetail = axios.get(`http://localhost:5000/app?username=${inname}&password=${inpass}`)
+const logindetail = axios.get(`https://login-backend-r5zb.onrender.com/app?username=${inname}&password=${inpass}`)
 logindetail.then(function(data){
   if(data.data === true){
 navigate('/login')
